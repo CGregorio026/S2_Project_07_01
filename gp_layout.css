@@ -22,10 +22,25 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* 
+This style displays the body as a flexbox with row wrapping, with the webkit extension set for flex as well.
+*/
+body {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
 
+section#sheet {
+    flex: 3 1 301px;
+    -webkit-flex: 3 1 301px;
+}
 
-
-
+article {
+    flex: 1 3 180px;
+    -webkit-flex: 1 3 180px;
+}
 
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
@@ -39,4 +54,3 @@
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
-
