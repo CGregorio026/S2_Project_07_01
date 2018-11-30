@@ -4,8 +4,8 @@
    Tutorial 5
    Case Problem 1
    
-   Author:   
-   Date:     
+   Author:   Christian Gregorio
+   Date:     11.28.18
    
    Filename: gp_print.css
 
@@ -17,23 +17,39 @@
 
 
 /* Hidden Objects */
-
-
-
-
-
-
+/* 
+These elements aren't needed because you don't need a nav or a footer on a piece of paper. You can't click on links in paper, dummy.
+*/
+nav,
+footer,
+article {
+    display: none;
+}
 
 /* Comic Book Sheet Styles */
+/* 
+Note that these are set in inches because paper is measured in inches.
+*/
+section#sheet {
+    width: 6in;
+    margin: 0 auto;
+}
 
+/* 
+This sets the sizes of certain pictures in inches.
+*/
+.size1 {
+    width: 5in;
+}
 
+.size2 {
+    width: 3in;
+}
 
+.size3 {
+    width: 2in;
+}
 
-
-
-
-
-
-
-
-
+.size4 {
+    width: 1.5in;
+}
